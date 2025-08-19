@@ -60,8 +60,8 @@
   </style>
 </head>
 <body>
-  <!-- This line sends form submissions to naresh.s@shai.health -->
-  <form action="mailto:naresh.s@shai.health" method="POST" enctype="text/plain">
+  <!-- This line sends submitted forms via email to both the sales team -->
+  <form action="mailto:naresh.s@shai.health,rajeshp@shai.health" method="POST" enctype="text/plain">
     <h2>Enquiry & Slot Booking</h2>
 
     <label for="name">Name</label>
@@ -88,6 +88,7 @@
     <label for="topics">Any Topics to be Focused on During the Discussion</label>
     <textarea name="topics" id="topics" rows="4"></textarea>
 
+    <!-- Submit Button -->
     <button type="submit">Submit</button>
   </form>
 </body>
