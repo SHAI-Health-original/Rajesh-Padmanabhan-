@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry & Slot Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 420px;
+      width: 100%;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background: #0073e6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace "yourFormID" with your actual Formspree form ID -->
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <h2>Enquiry & Slot Booking</h2>
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="organization">Organization Name</label>
+    <input type="text" name="organization" id="organization" required>
+
+    <label for="phone">Phone #</label>
+    <input type="tel" name="phone" id="phone" required>
+
+    <label for="best_time">Best Time to Contact</label>
+    <input type="text" name="best_time" id="best_time">
+
+    <label for="available_time">Available Time for a Virtual Call</label>
+    <input type="text" name="available_time" id="available_time">
+
+    <label for="topics">Any Topics to be Focused on During the Discussion</label>
+    <textarea name="topics" id="topics" rows="4"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
